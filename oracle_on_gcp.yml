@@ -1,0 +1,8 @@
+---
+- name: Create GCP resources
+  hosts: localhost
+  gather_facts: no
+  connection: local
+
+  roles:
+    - gcp_instance_creation

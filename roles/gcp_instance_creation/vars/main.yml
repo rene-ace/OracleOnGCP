@@ -1,0 +1,4 @@
+---
+# vars file for gcp_instance_creation
+gcp_cred_kind:                   "serviceaccount"
+gcp_cred_file:                   "/Users/rene/Documents/ansible/OracleOnGCP/roles/gcp_instance_creation/files/oracle-migration.json"

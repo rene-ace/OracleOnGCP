@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "oracle-migration",
+  "private_key_id": "2ac50a87c585c8794997e24419ab361f617c7015",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCS6SMwStqoupHY\nOfbIJKJ0LzXF1yYhaGSel0bTA8vTUQlN2IHHqN+Hgt3y0NjGfh/Mpu++22/0blT1\niqCJXzvQnKm+P326B4SxGG+T4GWndcam5PrZKQlMeQSrKrN9Ma6GCETE+rcHk/o6\n2jazAJ2/VLJrNsO8IM8jUH6ixiGibZL6gM0n+s3+cqOAffbI+j5evOuwCy4DgfyB\nJVP790W9ZVv5qUT1X8zwOHiW4NirzVChcXI97XeLBNhwD3Lo0h5hpdWnWKl85ZkR\n36ltuX8sfRFbtCjDJDeHJc50ttnqHFOJkZFBEVQpM04bqzVWyrTcwy3KXZ0EKCNt\nLdd+STPRAgMBAAECggEAHkpMc5ITeHOTS5JT9Bs9lZgATczY801rZZmKRErFlUnh\nkbfgtlJ22CFe8sgl0fNCSjdnOiJTeIHhKYlOJVTJ5+7NPsknepo/PSZtJv++5eKu\nNU4D/I9t9+MB1+rjfB4ovkDpMPYCk+DqWIUSfyDS5ZaofNubSug23TClE5mnaK5A\nBayvUzKetGnVaVxgsuQRmM0HlbbpncUZqsOjo90EmMWUj03u2XULzgXLHFs6jjgr\nQrIHRqMjbo1Cyj4v6F+duns/vjMUsgiCtEuPgu3WARpK+2upSVxWKp1Dr6KeJYQI\nCdtBYE3D5VJpmcfUlyXPPGUsxVmpHeVboDUYrD7j+QKBgQDB8ixKWsKNTxR6KAu5\nVMdV6wWE1cAP+nkw+jGOMn6S2zrZvroni2UPS5mo+rYDx7Okq7m0OOF9hVqZyAHB\nACXyK8ZSQUFcLJOioIN8bJ4pebSj3UqrZjt+8Dsi8vCqU/+6XHCywrJ5j2R1SxiA\nIsZKTEvMcDqGClDTlveG38wpbQKBgQDB6l+c641qCGRBenA2Ni94OzWUl4BbbxbY\nIODDP44nu7teW/csWsJAA8C/yarzoYWV0LFi+W9TO4XwWHH9Oans/Nt21FjknoNz\n/QLe6Ve3D19/NCccSUKlHVOG9CHnoQ8NJLEuc6Azzb2z6jUhHeGk5yJDy/jQTInO\nRI45VCU5dQKBgQCW4DVyVm65DUbpzNNqBrjXbvCpKLuz8m9rGYeJjmCHEEMU91nL\nv5YLsw1Dtl34TNfEh878k69fPWmA7mXm5Z2fakxq2tbkxMzJG8ON/NWBgGt1eoZH\nFk28b1gh1QpCBvyO1rDZb7r19AX7dUMHE4ZccEQbM0dj1QyRvgSriNhDdQKBgExX\nggbcMVNCNH4WvuCI2o1h+gkiz/SvOnYiE3qqpcN8xBo06I18uabME3Et6vB5cYb2\nny9Q9gP1lhh2KYJA1mYnchtJJCn1QdlDDYNGqDK4iachmBgpu2QXtI+Xw1VWcf+B\np4ObH8HlSL7xALOl+PSbzkCUp8MRrtsW4EsvlmwVAoGATdy8FOATJh4e7WTlO7/x\nrg3fZJzwlhsi4cg8rZKANOexeEad55h0KdXKKqiSpj8LzXVXWUw0rgI1b+0D5l/1\n+E4FcEyAiyeVNUILLD/bRTXLPazW4TUYQRkj1FYO7IdNV3Gb5CDBtBV+m7/ZBXuB\ngcGlweto5QZhBALhw7EWd9E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "oracle-gcp@oracle-migration.iam.gserviceaccount.com",
+  "client_id": "107288089015078247973",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/oracle-gcp%40oracle-migration.iam.gserviceaccount.com"
+}
