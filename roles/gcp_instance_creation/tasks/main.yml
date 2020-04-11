@@ -1,9 +1,77 @@
-- name: create a disk
+# Creation of the Boot disk
+- name: Task to create the Instance Boot disk
   gcp_compute_disk:
-    name: rene-ace-disk-asm2
-    size_gb: 100
-    zone: us-west1-b
-    project: oracle-migration
-    auth_kind: "serviceaccount"
-    service_account_file: "/Users/rene/Documents/ansible/OracleOnGCP/roles/gcp_instance_creation/files/oracle-migration.json"
+         name: "{{ gcp_boot_disk_name }}"
+         size_gb: "{{ gcp_boot_disk_size }}"
+         type: "{{ gcp_boot_disk_type }}"
+         source_image: "{{ gcp_boot_disk_image }}"
+         zone: "{{ gcp_zone }}"
+         project: "{{ gcp_project_name }}"
+         auth_kind: "{{ gcp_cred_kind }}"
+         service_account_file: "{{ gcp_cred_file }}"
+         scopes:
+           - https://www.googleapis.com/auth/compute
+         state: present
+  register: disk_boot
+# Creation of the ASM disk
+- name: Task to create the ASM disk
+  gcp_compute_disk:
+    name: "{{ gcp_asm_disk_name }}"
+    type: "{{ gcp_asm_disk_type }}"
+    size_gb: "{{ gcp_asm_disk_size }}"
+    zone: "{{ gcp_zone }}"
+    project: "{{ gcp_project_name }}"
+    auth_kind: "{{ gcp_cred_kind }}"
+    service_account_file: "{{ gcp_cred_file }}"
     state: present
+  register: disk_asm_1
+# Creation of the Network 
+- name: Task to create a network
+  gcp_compute_network:
+         name: 'network-instance'
+         project: "{{ gcp_project_name }}"
+         auth_kind: "{{ gcp_cred_kind }}"
+         service_account_file: "{{ gcp_cred_file }}"
+         scopes:
+           - https://www.googleapis.com/auth/compute
+         state: present
+  register: network
+# Creation of the Network address
+- name: Task to create a address
+  gcp_compute_address:
+         name: 'address-instance'
+         region: "{{ gcp_region }}"
+         project: "{{ gcp_project_name }}"
+         auth_kind: "{{ gcp_cred_kind }}"
+         service_account_file: "{{ gcp_cred_file }}"
+         scopes:
+           - https://www.googleapis.com/auth/compute
+         state: present
+  register: address
+# Creation of the Oracle Instance
+- name: Task of the creation of the Oracle Instance
+  gcp_compute_instance:
+         state: present
+         name: "{{ gcp_instance_name }}"
+         machine_type: "{{ gcp_machine_type }}"
+         disks:
+           - auto_delete: true
+             boot: true
+             source: "{{ disk_boot }}"
+         network_interfaces:
+             - network: "{{ network }}"
+               access_configs:
+                 - name: 'External NAT'
+                   nat_ip: "{{ address }}"
+                   type: 'ONE_TO_ONE_NAT'
+         zone: "{{ gcp_zone }}"
+         project: "{{ gcp_project_name }}"
+         auth_kind: "{{ gcp_cred_kind }}"
+         service_account_file: "{{ gcp_cred_file }}"
+         scopes:
+           - https://www.googleapis.com/auth/compute
+  register: instance
+- name: Wait for SSH to come up
+  wait_for: host={{ address.address }} port=22 delay=10 timeout=60
+- name: Add host to groupname
+  add_host: hostname={{ address.address }} groupname=oracle_instances

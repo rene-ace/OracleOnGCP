@@ -1,5 +1,5 @@
 ---
-- name: Create GCP resources
+- name: Playbook to create Oracle on Google Cloud
   hosts: localhost
   gather_facts: no
   connection: local
