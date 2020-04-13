@@ -9,8 +9,9 @@ Oracle Installation Prerequisites: Database Installation Guide for Linux
 (https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/index.html)
 
 Setup: 
+
 OS: Centos 7.5 
-Ansible: ansible 2.xi97.6
+Ansible: ansible 2.97.6
 
 Oracle Software: Download the Oracle software from OTN or MOS depending on your support status. Oracle binaries are staged from the "edelivery: Oracle Database 19c Software (64-bit)". They have to be manually downloaded and made available for this article to apply 
 
