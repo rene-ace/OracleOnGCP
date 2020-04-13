@@ -22,3 +22,6 @@ gcp_boot_disk_image:            "projects/centos-cloud/global/images/centos-7-v2
 # Vars for task Task to create the Oracle VM Instance
 gcp_instance_name:              "rene-ace-test-inst1"
 gcp_machine_type:               "n1-standard-8"
+
+#Vars for task network creation
+gcp_ip_cidr_range:               "172.16.0.0/16"
