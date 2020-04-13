@@ -67,7 +67,7 @@
   register: address
 
 # Creation of the Firewall Rule
-- name: create a firewall
+- name: Task to create a firewall
   gcp_compute_firewall:
     name: oracle-firewall
     network: "{{ network }}"
@@ -86,7 +86,7 @@
   register: firewall
 
 # Creation of the Oracle Instance
-- name: Task of the creation of the Oracle Instance
+- name: Task to create the Oracle Instance
   gcp_compute_instance:
          state: present
          name: "{{ gcp_instance_name }}"
@@ -102,6 +102,8 @@
                  - name: External NAT
                    nat_ip: "{{ address }}"
                    type: ONE_TO_ONE_NAT
+         tags:                                                                                     
+          items: oracle-ssh
          zone: "{{ gcp_zone }}"
          project: "{{ gcp_project_name }}"
          auth_kind: "{{ gcp_cred_kind }}"
