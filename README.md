@@ -17,6 +17,7 @@ Ansible: ansible 2.97.6
 Oracle Software: Download the Oracle software from OTN or MOS depending on your support status. Oracle binaries are staged from the "edelivery: Oracle Database 19c Software (64-bit)". They have to be manually downloaded and made available for this article to apply 
 
 A much deeper explanation of how this git project works is at:
+
 https://rene-ace.com/101-gcp-creation-vm-ansible
 
 Summary commands: 
