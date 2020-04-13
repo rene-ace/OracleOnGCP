@@ -5,4 +5,4 @@
   connection: local
 
   roles:
-    - gcp_instance_creation
+    - gcp_instance

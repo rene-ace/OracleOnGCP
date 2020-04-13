@@ -95,6 +95,9 @@
            - auto_delete: true
              boot: true
              source: "{{ disk_boot }}"
+           - auto_delete: true
+             boot: false
+             source: "{{ disk_asm_1 }}"
          network_interfaces:
              - network: "{{ network }}"
                subnetwork: "{{ subnet }}"
