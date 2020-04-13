@@ -1,10 +1,11 @@
 ---
 # Common vars for Role gcp_instance_creation
+# Set Accordingly to the recion and Zone you desire
 gcp_project_name:               "oracle-migration"
 gcp_region:                     "us-central1"
 gcp_zone:                       "us-central1-c"
 gcp_cred_kind:                  "serviceaccount"
-gcp_cred_file:                  "/Users/rene/Documents/GitHub/OracleOnGCP/roles/gcp_instance/files/oracle-migration.json"
+gcp_cred_file:                  "/Users/rene/Documents/GitHub/gcp_json_file/oracle-migration.json"
 
 # Vars for task Task to create the ASM disk
 gcp_asm_disk_name:              "rene-ace-disk-asm1"
@@ -13,6 +14,8 @@ gcp_asm_disk_size:              "150"
 gcp_asm_disk_labels:            "item=rene-ace"
 
 # Vars for task Task to create the Instance Boot disk
+# We are creating a Centos 7 Instance
+# Should you require a different image, change to the proper gcp_boot_disk_image
 gcp_boot_disk_name:             "rene-ace-inst1-boot-disk"
 gcp_boot_disk_type:             "pd-standard"
 gcp_boot_disk_size:             "100"
@@ -20,6 +23,7 @@ gcp_boot_disk_labels:           "item=rene-ace"
 gcp_boot_disk_image:            "projects/centos-cloud/global/images/centos-7-v20200309"
 
 # Vars for task Task to create the Oracle VM Instance
+# Change accordingly to the Machine type that you desire
 gcp_instance_name:              "rene-ace-test-inst1"
 gcp_machine_type:               "n1-standard-8"
 
