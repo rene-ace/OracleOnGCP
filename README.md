@@ -23,14 +23,19 @@ https://rene-ace.com/101-gcp-creation-vm-ansible
 Summary commands: 
 
 1. Clone this repository:
+
    git clone https://github.com/rene-ace/OracleOnGCP
 
-2. Stage the location of the Google Cloud Service account JSON file and modify the variable gcp_cred_file in the role vars to the location of the JSON file 
-   In my case I have it in the following location, outside of this git project:
+2. Stage the location of the Google Cloud Service account JSON file and modify the variable gcp_cred_file in the role vars to the location of the JSON file .In my case I have it in the following location, outside of this git project:
+
    /Users/rene/Documents/GitHub/gcp_json_file/oracle-migration.json
 
 3. Run the playbook as with the following tasks:
+
    3.1. To create the instance :
+   
      ansible-playbook -t create create_oracle_on_gcp.yml 
+     
    3.2  To delete the instance
+   
      ansible-playbook -t delete create_oracle_on_gcp.yml
