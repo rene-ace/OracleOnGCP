@@ -1,6 +1,9 @@
 ---
 # Common vars for Role gcp_instance_creation
-# Set Accordingly to the recion and Zone you desire
+# Set Accordingly to the region and Zone you desire
+# Also set the .json file accordingly.
+# You can see an example of how to create it in 
+# View Post https://rene-ace.com/101-gcp-creation-vm-ansible
 gcp_project_name:               "oracle-migration"
 gcp_region:                     "us-central1"
 gcp_zone:                       "us-central1-c"
