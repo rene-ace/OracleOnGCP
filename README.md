@@ -12,7 +12,11 @@ Setup:
 
 OS: Centos 7.5 
 
-Ansible: ansible 2.97.6
+Ansible: ansible 2.9.6
+
+pip: 20.0.2
+
+python : 3.7.7
 
 Oracle Software: Download the Oracle software from OTN or MOS depending on your support status. Oracle binaries are staged from the "edelivery: Oracle Database 19c Software (64-bit)". They have to be manually downloaded and made available for this article to apply 
 
