@@ -45,7 +45,7 @@ Summary commands:
      ansible-playbook -t delete create_oracle_on_gcp.yml
 
 Structure
-
+```ini
 rene@Renes-iMac OracleOnGCP % tree
 .
 ├── README.md
@@ -71,3 +71,4 @@ rene@Renes-iMac OracleOnGCP % tree
         │   └── test.yml
         └── vars
             └── main.yml
+```
