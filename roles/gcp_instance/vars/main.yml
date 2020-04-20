@@ -8,7 +8,7 @@ gcp_project_name:               "oracle-migration"
 gcp_region:                     "us-central1"
 gcp_zone:                       "us-central1-c"
 gcp_cred_kind:                  "serviceaccount"
-gcp_cred_file:                  "/Users/rene/Documents/GitHub/gcp_json_file/oracle-migration.json"
+gcp_cred_file:                  "/Users/rene/Documents/GitHub/gcp_json_file/gcp-oracle.json"
 
 # Vars for task Task to create the ASM disk
 gcp_asm_disk_name:              "rene-ace-disk-asm1"
