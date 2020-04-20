@@ -8,7 +8,7 @@ Then the installation of Oracle Database 19c 64-bit on Centos Linux 7 (OL7) 64-b
 Oracle Installation Prerequisites: Database Installation Guide for Linux 
 (https://docs.oracle.com/en/database/oracle/oracle-database/19/ladbi/index.html)
 
-* Setup: 
+# Setup: 
 
 OS: Centos 7.5 
 
@@ -24,7 +24,7 @@ A much deeper explanation of how this git project works is at:
 
 https://rene-ace.com/101-gcp-creation-vm-ansible
 
-* Summary commands: 
+# Summary commands: 
 
 1. Clone this repository:
 
@@ -44,7 +44,7 @@ https://rene-ace.com/101-gcp-creation-vm-ansible
    
      ansible-playbook -t delete create_oracle_on_gcp.yml
 
-* Structure
+# Structure
 ```ini
 rene@Renes-iMac OracleOnGCP % tree
 .
