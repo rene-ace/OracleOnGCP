@@ -10,7 +10,7 @@ Oracle Installation Prerequisites: Database Installation Guide for Linux
 
 # Setup: 
 
-Local Machine to run this playbook
+## Local Machine to run this playbook
 
 Ansible: ansible 2.9.6
 
@@ -20,7 +20,7 @@ python : 3.7.7
 
 gcloud SDK : 288.0.0
 
-GCP VM 
+## GCP VM 
 
 OS: Centos 7.5 
 
