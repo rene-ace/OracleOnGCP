@@ -10,13 +10,29 @@ Oracle Installation Prerequisites: Database Installation Guide for Linux
 
 # Setup: 
 
-OS: Centos 7.5 
+Local Machine to run this playbook
 
 Ansible: ansible 2.9.6
 
 pip: 20.0.2
 
 python : 3.7.7
+
+gcloud SDK : 288.0.0
+
+GCP VM 
+
+OS: Centos 7.5 
+
+VM Type : n1-standard-8 VM which has 8 vCPU  and 30 GB Memory 
+
+1 150g SSD Disk for ASM , Diskgroup DATA
+
+1 100g HD Disk for boot disk
+
+Oracle 19.3 for OHAS and RDBMS
+
+Oracle DB instance name : DBTEST
 
 Oracle Software: Download the Oracle software from OTN or MOS depending on your support status. Oracle binaries are staged from the "edelivery: Oracle Database 19c Software (64-bit)". They have to be manually downloaded and made available for this article to apply 
 
